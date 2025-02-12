@@ -1,0 +1,11 @@
+from main_library.formula_teams.formula_team import FormulaTeam
+
+
+class RedBullTeam(FormulaTeam):
+
+    @property
+    def team_data(self):
+        expenses = 250_000
+        sponsors = {'Oracle': {1: 1_500_000, 2: 800_00},
+                    'Honda': {8: 20_000, 10: 10_000}}
+        return expenses, sponsors
